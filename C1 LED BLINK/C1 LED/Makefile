@@ -34,7 +34,7 @@ PROGRAMMER_TYPE = usbasp
 # NOTE: baud rate -b must match the baud rate in the ArduinoISP sketch = 19200
 # If the baud rate is different you will get an avrdude error:
 #  avrdude error - stk500_getsync(): not in sync: resp=0xff
-PROGRAMMER_ARGS = -v -v -P\\.\COM2 -b19200
+PROGRAMMER_ARGS = -v -v -P\\.\COM3 -b19200
 
 ##########------------------------------------------------------##########
 ##########                   Makefile Magic!                    ##########
