@@ -18,6 +18,7 @@ ISR(TIM0_OVF_vect) {
 int main(void) {
   cli();	//Clears the global interrupt flag
   DDRB = (1<<DDB4);
+    //listen to this port --check again on circuitboard
   PORTB = 0;
   TCCR0B |= (1<<CS02) | (1<<CS00) ;    //prescale timer by a factor of 1024
   TIMSK0 |= (1<<TOIE0);    //enable timer overflow interrupt
